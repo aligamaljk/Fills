@@ -1,0 +1,59 @@
+.home_video{
+    padding: 200px 0;
+    // padding: 250px 0;
+    position: relative;
+    overflow: hidden;
+    .show{
+        display: block;
+    }
+    .unshow{
+        display: none;
+    }
+    .video_image{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 20%;
+        // bottom: 5%;
+        background-image: url("https://www.chauffeur-hub.com/assets/img/vedio-cover.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        // background-position: center;
+    }
+    .container{
+        .video_content{
+            justify-content: center;
+            align-items: center;
+            // position: relative;
+            // bottom: 40px;
+            .video_inf{
+                text-align: center;
+                color: #fff;
+                .video_title{
+                    color: #fff;
+                    margin-bottom: 1rem;
+                    font-weight: 700;
+                    line-height: 1.25;
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 15px;
+                    // font-weight: 400;
+                    margin-bottom: 1rem;
+                }
+            }
+            .video_promo_content{
+                text-align: center;
+                a{
+                    border-radius: 50%;
+                    // background-color: #fff;
+                    span{
+                        font-size: 60px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

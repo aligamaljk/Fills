@@ -1,0 +1,158 @@
+.Home_page_slider{
+    background: linear-gradient(75deg, #6f3174, #612166);
+    padding: 100px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container{
+        .home_slider_content{
+            flex-flow: nowrap;
+            // justify-content: space-between;
+            align-items: center;
+            position: relative;
+            @media only screen and (max-width: 767px){
+                // text-align: center;
+                justify-content: center;
+                flex-direction: column;
+                .home_slider_info{
+                    margin-bottom: 5rem;
+                    .home_slider_title{
+                        margin-bottom: 1rem !important;
+                    }
+                }
+                .ant-col{
+                    max-width: 100% !important;
+                }
+            }
+            @media only screen and (max-width: 991px){
+                .ant-col{
+                    max-width: 100% !important;
+                }
+                .slick-slider{
+                    width: 500px !important;
+                }
+            }
+            .ant-col{
+                padding: 0 15px;
+                max-width: 50%;
+            }
+            .home_slider_info{
+                color: #fff;
+                width: fit-content;
+                .home_slider_title{
+                    margin-bottom: 2rem;
+                    font-size: 30px;
+                    font-weight: 700;
+                    line-height: 1.25;
+                    color: #fff ;
+                }
+                p{
+                    margin-top: 0;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+            .home_slider{
+                .home_slider_details{
+                    .slick-prev, 
+                    .slick-next{
+                        display: none !important;
+                    }
+                    .slick-slider{
+                            width: 600px ;
+                        }
+                    .slick-dots{
+                        // margin-top: 30px;
+                        bottom: 0 !important;
+                        gap: 2rem !important;
+                        li{
+                            background: #b5b5b5 !important;
+                        }
+                        .slick-active{
+                            width: 1.4rem !important;
+                            height: 1.4rem !important;
+                            background: #fff !important;
+                            border: 2px solid transparent;
+                        }
+                    }
+                    .slider_card{
+                        position: relative;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            top: 50px;
+                            left: 10px;
+                            width: 90%;
+                            height: 69%;
+                            background: #65256a;
+                            -webkit-transform: rotate(-6deg);
+                            transform: rotate(-6deg);
+                            border-radius: 4px;
+                        }
+                        }
+                        .owl-stage-outer{
+                            .owl-stage{
+                                .owl-item {
+                                    margin-bottom: 40px;
+                                    .item{
+                                        .testimonial-quote-wrap{
+                                            background: #612166;
+                                            padding: 30px 40px;
+                                            border-radius: 4px;
+                                            cursor: pointer;
+                                            display: flex;
+                                            // text-align: end;
+                                            justify-content: center;
+                                            position: relative;
+                                            .media{
+                                                .media_info{
+                                                    .media-body{
+                                                        color: #fff;
+                                                        margin-bottom: 15px;
+                                                        // position: relative;
+                                                        // right: 120px;
+                                                        // left: 120px;
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        .media_body_title{
+                                                            color: #fff;
+                                                            margin-bottom: 0;
+                                                            font-size: 30px;
+                                                            font-weight: 700;
+                                                        }
+                                                        span{
+                                                            color: #fff;
+                                                            font-size: 18px;
+                                                        }
+                                                        svg{
+                                                            font-size: 40px;
+                                                            font-weight: 900;
+                                                            position: absolute;
+                                                            top: 60px;
+                                                            left: 90px;
+                                                        }
+                                                    }
+                                                }
+                                                .client-say{
+                                                    color: #fff;
+                                                    margin-bottom: 15px;
+                                                    // width: 400px;
+                                                    p{
+                                                        margin-top: 0;
+                                                        font-size: 18px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
